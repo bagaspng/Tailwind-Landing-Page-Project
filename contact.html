@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>png corp — Kontak</title>
+    <meta
+      name="description"
+      content="Hubungi png corp untuk demo atau konsultasi"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { neon: "#00ff7f", vibe: "#8A2BE2", stealth: "#0b0b0b" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-stealth text-slate-200 min-h-screen mono">
+    <header
+      class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
+    >
+      <a href="index.html" class="flex items-center gap-3">
+        <svg
+          class="h-7"
+          viewBox="0 0 120 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="120" height="40" rx="6" fill="#0b0b0b" />
+          <text
+            x="12"
+            y="26"
+            font-family="monospace"
+            font-size="16"
+            fill="#00ff7f"
+            font-weight="700"
+          >
+            png
+          </text>
+          <text
+            x="46"
+            y="26"
+            font-family="monospace"
+            font-size="12"
+            fill="#b388ff"
+          >
+            corp
+          </text>
+        </svg>
+      </a>
+
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Home</a
+        >
+        <a href="fitur.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Fitur</a
+        >
+        <a href="about.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Tentang</a
+        >
+        <a
+          href="contact.html"
+          class="px-3 py-1 rounded bg-vibe text-black font-semibold"
+          >Kontak</a
+        >
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+      <h2 class="text-2xl font-bold text-vibe">Kontak</h2>
+      <p class="mt-3 text-slate-300">
+        Butuh demo, konsultasi, atau kerja sama? Isi formulir singkat di bawah
+        atau kirim email ke <span class="text-neon">hello@png.corp</span>.
+      </p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <form class="p-6 rounded border border-slate-800 bg-slate-900">
+          <label class="block text-sm text-slate-300">Nama</label>
+          <input
+            class="mt-1 w-full rounded bg-transparent border border-slate-700 px-3 py-2 text-slate-200"
+            placeholder="Nama lengkap"
+          />
+
+          <label class="block mt-4 text-sm text-slate-300">Email</label>
+          <input
+            class="mt-1 w-full rounded bg-transparent border border-slate-700 px-3 py-2 text-slate-200"
+            placeholder="you@example.com"
+          />
+
+          <label class="block mt-4 text-sm text-slate-300">Pesan</label>
+          <textarea
+            class="mt-1 w-full rounded bg-transparent border border-slate-700 px-3 py-2 text-slate-200"
+            rows="5"
+            placeholder="Ceritakan kebutuhan Anda..."
+          ></textarea>
+
+          <div class="mt-4">
+            <button
+              type="button"
+              class="px-4 py-2 bg-neon text-black rounded font-semibold"
+            >
+              Kirim
+            </button>
+          </div>
+        </form>
+
+        <div
+          class="p-6 rounded border border-slate-800 bg-slate-900 text-slate-300"
+        >
+          <h3 class="font-semibold text-neon">Alamat</h3>
+          <p class="mt-2 text-sm">
+            Pringsewu / Remote — tersedia untuk kerja jarak jauh.
+          </p>
+
+          <h3 class="mt-6 font-semibold text-neon">Layanan</h3>
+          <ul class="mt-2 text-sm text-slate-300 space-y-1">
+            <li>• Red Team Assessments</li>
+            <li>• Incident response & containment</li>
+            <li>• Secure-by-design engineering</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-800 text-sm text-slate-500"
+    >
+      <div class="flex justify-between">
+        <div>&copy; <span id="year4"></span> png corp</div>
+        <div class="text-xs text-slate-400">
+          Let's keep things green and safe
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year4").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
