@@ -1,169 +1,146 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>png corp — Teknologi untuk Masa Depan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>png corp — Home</title>
     <meta
       name="description"
-      content="png corp adalah perusahaan teknologi yang membangun solusi digital andal untuk bisnis modern."
+      content="png corp - offensive-minded tech, red-team & security ops"
     />
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              brand: {
-                50: "#f0f9ff",
-                100: "#e0f2fe",
-                500: "#06b6d4" /* cyan-500 */,
-                600: "#0891b2" /* cyan-600 */,
-                700: "#0e7490" /* cyan-700 */,
-              },
+              neon: { DEFAULT: "#00ff7f" },
+              vibe: { DEFAULT: "#8A2BE2" },
+              stealth: { DEFAULT: "#0b0b0b" },
             },
           },
         },
         darkMode: "class",
       };
     </script>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='24' fill='%2306b6d4'/%3E%3Ctext x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='64' fill='white' font-family='Arial, Helvetica, sans-serif'%3Epng%3C/text%3E%3C/svg%3E"
-    />
     <style>
-      /* Smooth shadow for cards */
-      .card {
-        box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08);
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+          monospace;
       }
     </style>
   </head>
-  <body
-    class="antialiased text-slate-800 bg-white dark:bg-slate-950 dark:text-slate-100"
-  >
-    <!-- Header / Navigation -->
+  <body class="bg-stealth text-slate-200 min-h-screen mono">
     <header
-      class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200/60 dark:border-slate-800/60"
+      class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <!-- Logo -->
-          <a
-            href="#"
-            class="inline-flex items-center gap-2 font-semibold text-lg"
+      <a href="index.html" class="flex items-center gap-3">
+        <svg
+          class="h-8"
+          viewBox="0 0 120 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="120" height="40" rx="6" fill="#0b0b0b" />
+          <text
+            x="12"
+            y="26"
+            font-family="monospace"
+            font-size="16"
+            fill="#00ff7f"
+            font-weight="700"
           >
-            <span
-              class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-500 text-white"
-              >png</span
-            >
-            <span class="tracking-tight">png corp</span>
-          </a>
-
-          <!-- Desktop Nav -->
-          <nav class="hidden md:flex items-center gap-8">
-            <a
-              href="#home"
-              class="nav-link text-sm font-medium hover:text-brand-600"
-              >Beranda</a
-            >
-            <a
-              href="#features"
-              class="nav-link text-sm font-medium hover:text-brand-600"
-              >Fitur</a
-            >
-            <a
-              href="#about"
-              class="nav-link text-sm font-medium hover:text-brand-600"
-              >Tentang</a
-            >
-            <a
-              href="#contact"
-              class="nav-link text-sm font-medium hover:text-brand-600"
-              >Kontak</a
-            >
-            <a
-              href="#contact"
-              class="inline-flex items-center rounded-lg bg-brand-600 text-white px-4 py-2 text-sm font-semibold hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500"
-              >Konsultasi Gratis</a
-            >
-          </nav>
-
-          <!-- Mobile Menu Button -->
-          <button
-            id="menuBtn"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-            class="md:hidden inline-flex items-center justify-center rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-500"
-            aria-label="Toggle menu"
+            png
+          </text>
+          <text
+            x="46"
+            y="26"
+            font-family="monospace"
+            font-size="12"
+            fill="#b388ff"
           >
-            <svg
-              id="iconOpen"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            corp
+          </text>
+        </svg>
+        <span class="text-sm text-slate-300">png corp</span>
+      </a>
+
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Home</a
+        >
+        <a href="features.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Fitur</a
+        >
+        <a href="about.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Tentang</a
+        >
+        <a
+          href="contact.html"
+          class="px-3 py-1 rounded bg-neon text-black font-semibold"
+          >Kontak</a
+        >
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+      <section class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight" style="color: #b388ff">
+            png corp
+          </h1>
+          <p class="mt-4 text-lg text-slate-300">
+            Red-team focused engineering — kita bangun, kita retas (to secure).
+            Tools, automation, dan platform untuk penetration, ops, and incident
+            response.
+          </p>
+
+          <div class="mt-6 flex gap-3">
+            <a
+              href="features.html"
+              class="px-5 py-2 border rounded text-sm border-slate-700 hover:border-vibe"
+              >Lihat Fitur</a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-            <svg
-              id="iconClose"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 hidden"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+            <a
+              href="contact.html"
+              class="px-5 py-2 rounded text-sm bg-neon text-black font-medium"
+              >Mulai Konsultasi</a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+          </div>
+
+          <ul class="mt-6 text-xs text-slate-400 space-y-2">
+            <li>• Quick Red Team playbooks</li>
+            <li>• Secure-by-default engineering</li>
+            <li>• CI for attack-simulations</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900/50 rounded-lg p-6 border border-slate-800">
+          <pre class="text-sm text-neon truncate">
+# quick example
+ssh pentest@target -p 2222
+# run reconnaissance
+nmap -sC -sV target.example.com
+# deploy safe agent for telemetry
+</pre
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-800 text-sm text-slate-500"
+    >
+      <div class="flex justify-between items-center">
+        <div>&copy; <span id="year"></span> png corp</div>
+        <div class="space-x-3">
+          <a href="#" class="text-slate-400 hover:text-neon">TW</a>
+          <a href="#" class="text-slate-400 hover:text-neon">GH</a>
         </div>
       </div>
+    </footer>
 
-      <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="md:hidden hidden border-t border-slate-200 dark:border-slate-800"
-      >
-        <nav class="px-4 py-4 space-y-2">
-          <a
-            href="#home"
-            class="block px-3 py-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800"
-            >Beranda</a
-          >
-          <a
-            href="#features"
-            class="block px-3 py-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800"
-            >Fitur</a
-          >
-          <a
-            href="#about"
-            class="block px-3 py-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800"
-            >Tentang</a
-          >
-          <a
-            href="#contact"
-            class="block px-3 py-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800"
-            >Kontak</a
-          >
-          <a
-            href="#contact"
-            class="block text-center px-3 py-2 rounded-md bg-brand-600 text-white hover:bg-brand-700"
-            >Konsultasi Gratis</a
-          >
-        </nav>
-      </div>
-    </header>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
