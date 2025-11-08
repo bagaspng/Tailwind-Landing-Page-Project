@@ -3,15 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>png corp — Fitur</title>
+    <title>png corp — Tentang</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {
-          extend: {
-            colors: { neon: "#00ff7f", vibe: "#8A2BE2", stealth: "#0b0b0b" },
-          },
-        },
+        theme: { extend: { colors: { neon: "#00ff7f", vibe: "#8A2BE2" } } },
       };
     </script>
   </head>
@@ -51,12 +47,12 @@
         <a href="index.html" class="px-3 py-1 rounded hover:bg-slate-800"
           >Home</a
         >
-        <a
-          href="features.html"
-          class="px-3 py-1 rounded bg-vibe text-black font-semibold"
+        <a href="features.html" class="px-3 py-1 rounded hover:bg-slate-800"
           >Fitur</a
         >
-        <a href="about.html" class="px-3 py-1 rounded hover:bg-slate-800"
+        <a
+          href="about.html"
+          class="px-3 py-1 rounded bg-vibe text-black font-semibold"
           >Tentang</a
         >
         <a href="contact.html" class="px-3 py-1 rounded hover:bg-slate-800"
@@ -66,39 +62,29 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-6 py-10">
-      <h2 class="text-2xl font-bold text-vibe">Fitur Utama</h2>
-      <p class="mt-2 text-sm text-slate-400">Ringkas, terfokus, actionable.</p>
+      <h2 class="text-2xl font-bold text-vibe">Siapa kami</h2>
+      <p class="mt-3 text-slate-300">
+        png corp adalah tim engineer dan operator yang menggabungkan teknik
+        offensive dengan prinsip secure-by-design. Kami percaya bahwa untuk
+        membangun yang aman, kita harus mengerti bagaimana sistem bisa diserang
+        — lalu memperbaikinya dari akarnya.
+      </p>
 
-      <div class="mt-8 grid gap-6 sm:grid-cols-3">
-        <div class="p-5 rounded border border-slate-800 bg-slate-900">
-          <div class="text-neon font-semibold">1. Red Team Ops</div>
+      <div class="mt-6 grid sm:grid-cols-2 gap-6">
+        <div class="p-4 rounded border border-slate-800 bg-slate-900">
+          <div class="text-sm font-semibold text-neon">Nila & Misi</div>
           <p class="mt-2 text-sm text-slate-300">
-            Playbooks, safe toolchains, dan automasi serangan simulasi yang
-            repeatable.
+            Transparansi, Repeatability, dan Safety-first dalam eksperimen
+            keamanan.
           </p>
         </div>
-
-        <div class="p-5 rounded border border-slate-800 bg-slate-900">
-          <div class="text-neon font-semibold">2. App Hardening</div>
+        <div class="p-4 rounded border border-slate-800 bg-slate-900">
+          <div class="text-sm font-semibold text-neon">Tim</div>
           <p class="mt-2 text-sm text-slate-300">
-            Security pipeline: SAST, dependency checks, runtime hardening.
+            Red-teamers, SRE, devs, dan analyst yang rutin menjalankan simulasi
+            dan post-mortem.
           </p>
         </div>
-
-        <div class="p-5 rounded border border-slate-800 bg-slate-900">
-          <div class="text-neon font-semibold">3. Incidence Response</div>
-          <p class="mt-2 text-sm text-slate-300">
-            Telemetry & safe-containment playbooks untuk kerusakan minimal.
-          </p>
-        </div>
-      </div>
-
-      <div class="mt-8">
-        <a
-          href="contact.html"
-          class="inline-block px-4 py-2 bg-neon text-black rounded font-semibold"
-          >Minta Demo</a
-        >
       </div>
     </main>
 
@@ -106,13 +92,13 @@
       class="max-w-5xl mx-auto px-6 py-8 border-t border-slate-800 text-sm text-slate-500"
     >
       <div class="flex justify-between">
-        <div>&copy; <span id="year2"></span> png corp</div>
-        <div class="text-xs text-slate-400">Made for ops</div>
+        <div>&copy; <span id="year3"></span> png corp</div>
+        <div class="text-xs text-slate-400">Keep it green — keep it safe</div>
       </div>
     </footer>
 
     <script>
-      document.getElementById("year2").textContent = new Date().getFullYear();
+      document.getElementById("year3").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
