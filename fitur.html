@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>png corp — Fitur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { neon: "#00ff7f", vibe: "#8A2BE2", stealth: "#0b0b0b" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-stealth text-slate-200 min-h-screen mono">
+    <!-- Header (kopi sederhana dari index, supaya tiap file standalone) -->
+    <header
+      class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
+    >
+      <a href="index.html" class="flex items-center gap-3">
+        <svg
+          class="h-7"
+          viewBox="0 0 120 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="120" height="40" rx="6" fill="#0b0b0b" />
+          <text
+            x="12"
+            y="26"
+            font-family="monospace"
+            font-size="16"
+            fill="#00ff7f"
+            font-weight="700"
+          >
+            png
+          </text>
+          <text
+            x="46"
+            y="26"
+            font-family="monospace"
+            font-size="12"
+            fill="#b388ff"
+          >
+            corp
+          </text>
+        </svg>
+      </a>
+      <nav class="space-x-4 text-sm">
+        <a href="index.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Home</a
+        >
+        <a
+          href="features.html"
+          class="px-3 py-1 rounded bg-vibe text-black font-semibold"
+          >Fitur</a
+        >
+        <a href="about.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Tentang</a
+        >
+        <a href="contact.html" class="px-3 py-1 rounded hover:bg-slate-800"
+          >Kontak</a
+        >
+      </nav>
+    </header>
+  </body>
+</html>
